@@ -66,9 +66,8 @@ jobs:
           name: Push Docker image into Docker Hub
           command: |
             echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-            TAG=nanodegree4
             dockerpath=mahitha8/udacity_project4
-            docker tag $TAG $dockerpath
+            docker image tag nanodegree4 $dockerpath
             docker push $dockerpath
 
   #Deploy to AWS Kubernetes Application         
