@@ -66,8 +66,8 @@ jobs:
           name: Push Docker image into Docker Hub
           command: |
             echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-            TAG=divya.18
-            dockerpath=anchandivya/$TAG
+            TAG=udacity_project4
+            dockerpath=mahitha8/udacity_project4
             docker tag $TAG $dockerpath
             docker push $dockerpath
 
