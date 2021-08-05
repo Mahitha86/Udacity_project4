@@ -56,7 +56,7 @@ jobs:
       - run:
           name: Build Docker Image
           command: |
-            TAG=divya.18
+            TAG=nanodegree4
             docker build -t $TAG .
       - run:
           name: List Docker Image
@@ -66,8 +66,9 @@ jobs:
           name: Push Docker image into Docker Hub
           command: |
             echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-            dockerpath=mahitha8/udacity_project4
-            docker image tag nanodegree4 $dockerpath
+            TAG=nanodegree4
+            dockerpath=mahitha86/udacity_project4
+            docker tag $TAG $dockerpath
             docker push $dockerpath
 
   #Deploy to AWS Kubernetes Application         
