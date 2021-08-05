@@ -6,7 +6,7 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath=ankesh9323/ndproject-4
+dockerpath=mahitha8/udacity_project4
 
 # Step 2:  
 # Authenticate & tag
