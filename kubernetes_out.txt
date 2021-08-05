@@ -5,3 +5,13 @@ Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
 
 Handling connection for 8000
+
+#output of the prediction script
+
+ubuntu:~/environment/Udacity_project4 (master) $ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
